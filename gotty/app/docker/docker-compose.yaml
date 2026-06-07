@@ -5,17 +5,13 @@ services:
     restart: unless-stopped
     environment:
       TZ: ${wizard_tz:-Asia/Shanghai}
+    volumes:
+      - ${TRIM_APPDEST:-./gotty_data}:/var/sock
     ports:
       - "${wizard_gotty_port:-8080}:8080"
     command:
-      - gotty
-      - "-w"
-      - "--ws-origin"
-      - ".*"
-      - "-c"
-      - "${wizard_gotty_user:-admin}:${wizard_gotty_pass:-}"
-      - tmux
-      - new
-      - -A
-      - -s
-      - main
+      - sh
+      - -c
+      - |
+        socat UNIX-LISTEN:/var/sock/app.sock,fork TCP:127.0.0.1:8080 &
+        exec gotty -w --ws-origin ".*" -c ${wizard_gotty_user:-admin}:${wizard_gotty_pass:-} tmux new -A -s main

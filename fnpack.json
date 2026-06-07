@@ -2,7 +2,7 @@
   "gotty": {
     "display_name": "Web 終端",
     "platform": "x86",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "desc": "基於 GoTTY 的輕量網頁終端，支援 tmux 會話持久化。開啟瀏覽器即可操作 Shell，斷線重連不中斷。",
     "labels": "工具,效率",
     "distributor": "MuLin",
@@ -12,6 +12,6 @@
     "install_type": "系統空間",
     "size": "16.9",
     "download_url": "",
-    "changelog": "初始版本：基於 mulin/gotty-tmux 映像，支援 tmux 會話持久化與 Basic Auth 密碼認證。"
+    "changelog": "v1.0.1：改為 Gateway Socket 模式，內網外網 HTTPS 皆可正常顯示終端畫面。新增 socat 映像層。"
   }
 }

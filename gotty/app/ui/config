@@ -7,12 +7,13 @@
       "control": {
         "accessPerm": "readonly"
       },
-      "protocol": "http",
-      "port": "${wizard_gotty_port}",
+      "protocol": "",
+      "gatewayPrefix": "/app/gotty",
+      "gatewaySocket": "app.sock",
       "title": "Web 終端",
       "icon": "images/icon_{0}.png",
       "type": "iframe",
-      "url": ""
+      "url": "/app/gotty/"
     }
   }
 }
