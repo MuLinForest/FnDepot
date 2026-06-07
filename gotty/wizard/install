@@ -4,7 +4,7 @@
     "items": [
       {
         "type": "tips",
-        "helpText": "GoTTY 是輕量 Web 終端工具，搭配 tmux 實現會話持久化。容器映像約 16MB。存取密碼若留空則不啟用認證（不建議）。"
+        "helpText": "GoTTY 是輕量 Web 終端工具。內部使用 /bin/login 提供標準 TTY 登入介面，輸入主機帳密即可操作 FnOS Shell。存取密碼若留空則不啟用外層認證（打開直接看到 login prompt）。"
       },
       {
         "type": "text",
@@ -50,18 +50,6 @@
           {
             "required": true,
             "message": "請輸入容器時區"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "field": "wizard_host_user",
-        "label": "主機使用者 UID/名稱",
-        "initValue": "1000",
-        "rules": [
-          {
-            "required": true,
-            "message": "請輸入主機使用者 UID 或名稱"
           }
         ]
       }

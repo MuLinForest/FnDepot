@@ -16,4 +16,6 @@ services:
       - -c
       - |
         socat UNIX-LISTEN:/var/sock/app.sock,fork TCP:127.0.0.1:8080 &
-        exec gotty -w --path /app/gotty --ws-origin ".*" -c ${wizard_gotty_user:-admin}:${wizard_gotty_pass:-} tmux new -A -s main nsenter --target 1 --mount --uts --ipc --pid -- su - ${wizard_host_user:-1000}
+        AUTH=""
+        [ -n "${wizard_gotty_pass}" ] && AUTH="-c ${wizard_gotty_user:-admin}:${wizard_gotty_pass}"
+        exec gotty -w --path /app/gotty --ws-origin ".*" $AUTH tmux new -A -s main nsenter --target 1 --mount --uts --ipc --pid -- /bin/login
