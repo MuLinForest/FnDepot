@@ -1,0 +1,22 @@
+{
+  "docker-project": {
+    "projects": [
+      {
+        "name": "gotty",
+        "path": "docker"
+      }
+    ]
+  },
+  "data-share": {
+    "shares": [
+      {
+        "name": "gotty",
+        "permission": {
+          "rw": [
+            "gotty"
+          ]
+        }
+      }
+    ]
+  }
+}

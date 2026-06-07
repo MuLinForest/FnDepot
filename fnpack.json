@@ -1,0 +1,17 @@
+{
+  "gotty": {
+    "display_name": "Web 終端",
+    "platform": "x86",
+    "version": "1.0.0",
+    "desc": "基於 GoTTY 的輕量網頁終端，支援 tmux 會話持久化。開啟瀏覽器即可操作 Shell，斷線重連不中斷。",
+    "labels": "工具,效率",
+    "distributor": "MuLin",
+    "distributor_url": "https://github.com/MuLinForest",
+    "bug_report_url": "https://github.com/MuLinForest/FnDepot/issues",
+    "isdocker": "true",
+    "install_type": "系統空間",
+    "size": "16.9",
+    "download_url": "",
+    "changelog": "初始版本：基於 mulin/gotty-tmux 映像，支援 tmux 會話持久化與 Basic Auth 密碼認證。"
+  }
+}

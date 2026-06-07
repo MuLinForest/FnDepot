@@ -1,0 +1,58 @@
+[
+  {
+    "stepTitle": "GoTTY 服務設定",
+    "items": [
+      {
+        "type": "tips",
+        "helpText": "GoTTY 是輕量 Web 終端工具，搭配 tmux 實現會話持久化。容器映像約 16MB。存取密碼若留空則不啟用認證（不建議）。"
+      },
+      {
+        "type": "text",
+        "field": "wizard_gotty_port",
+        "label": "服務埠口 (PORT)",
+        "initValue": "8080",
+        "rules": [
+          {
+            "required": true,
+            "message": "請輸入服務埠口"
+          },
+          {
+            "pattern": "^[0-9]+$",
+            "message": "埠口必須是數字"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "field": "wizard_gotty_user",
+        "label": "存取帳號 (USER)",
+        "initValue": "admin",
+        "rules": [
+          {
+            "required": true,
+            "message": "請輸入存取帳號"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "field": "wizard_gotty_pass",
+        "label": "存取密碼 (PASSWORD)",
+        "initValue": "",
+        "rules": []
+      },
+      {
+        "type": "text",
+        "field": "wizard_tz",
+        "label": "容器時區 (TZ)",
+        "initValue": "Asia/Shanghai",
+        "rules": [
+          {
+            "required": true,
+            "message": "請輸入容器時區"
+          }
+        ]
+      }
+    ]
+  }
+]

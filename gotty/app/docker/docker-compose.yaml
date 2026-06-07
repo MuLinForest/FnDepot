@@ -1,0 +1,19 @@
+services:
+  gotty:
+    image: mulin/gotty-tmux:latest
+    container_name: gotty
+    restart: unless-stopped
+    environment:
+      TZ: ${wizard_tz:-Asia/Shanghai}
+    ports:
+      - "${wizard_gotty_port:-8080}:8080"
+    command:
+      - gotty
+      - "-w"
+      - "-c"
+      - "${wizard_gotty_user:-admin}:${wizard_gotty_pass:-}"
+      - tmux
+      - new
+      - -A
+      - -s
+      - main

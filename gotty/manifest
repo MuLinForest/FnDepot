@@ -1,0 +1,13 @@
+appname=gotty
+version=1.0.0
+display_name=Web 終端
+desc="""基於 GoTTY 的輕量網頁終端，支援 tmux 會話持久化，開啟瀏覽器即可操作 Shell。"""
+platform=x86
+source=thirdparty
+maintainer=MuLin
+distributor=MuLin
+distributor_url=https://github.com/MuLinForest
+ctl_stop=true
+install_type=root
+service_port=8080
+checkport=false
