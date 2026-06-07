@@ -10,6 +10,8 @@ services:
     command:
       - gotty
       - "-w"
+      - "--ws-origin"
+      - ".*"
       - "-c"
       - "${wizard_gotty_user:-admin}:${wizard_gotty_pass:-}"
       - tmux
