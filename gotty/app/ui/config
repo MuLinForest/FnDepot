@@ -2,7 +2,7 @@
   ".url": {
     "gotty.Application": {
       "noDisplay": false,
-      "allUsers": true,
+      "allUsers": false,
       "fileTypes": [],
       "control": {
         "accessPerm": "readonly"

@@ -52,6 +52,18 @@
             "message": "請輸入容器時區"
           }
         ]
+      },
+      {
+        "type": "text",
+        "field": "wizard_host_user",
+        "label": "主機使用者 UID/名稱",
+        "initValue": "1000",
+        "rules": [
+          {
+            "required": true,
+            "message": "請輸入主機使用者 UID 或名稱"
+          }
+        ]
       }
     ]
   }
