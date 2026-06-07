@@ -14,4 +14,4 @@ services:
       - -c
       - |
         socat UNIX-LISTEN:/var/sock/app.sock,fork TCP:127.0.0.1:8080 &
-        exec gotty -w --ws-origin ".*" -c ${wizard_gotty_user:-admin}:${wizard_gotty_pass:-} tmux new -A -s main
+        exec gotty -w --path /app/gotty --ws-origin ".*" -c ${wizard_gotty_user:-admin}:${wizard_gotty_pass:-} tmux new -A -s main
