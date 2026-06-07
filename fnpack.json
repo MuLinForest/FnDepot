@@ -3,7 +3,7 @@
     "display_name": "Web 終端",
     "platform": "x86",
     "version": "1.0.1",
-    "desc": "基於 GoTTY 的輕量網頁終端，支援 tmux 會話持久化。開啟瀏覽器即可操作 Shell，斷線重連不中斷。",
+    "desc": "基於 GoTTY + nsenter 的 Web 終端，tmux 會話持久化、/bin/login 標準 TTY 登入、穿透容器直達 FnOS 主機 Shell。斷線重連不中斷。",
     "labels": "工具,效率",
     "distributor": "MuLin",
     "distributor_url": "https://github.com/MuLinForest",
