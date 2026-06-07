@@ -11,3 +11,5 @@ ctl_stop=true
 install_type=root
 service_port=8080
 checkport=false
+desktop_uidir=ui
+desktop_applaunchname=gotty.Application

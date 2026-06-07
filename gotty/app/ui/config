@@ -1,0 +1,18 @@
+{
+  ".url": {
+    "gotty.Application": {
+      "noDisplay": false,
+      "allUsers": true,
+      "fileTypes": [],
+      "control": {
+        "accessPerm": "readonly"
+      },
+      "protocol": "http",
+      "port": "${wizard_gotty_port}",
+      "title": "Web 終端",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "url": ""
+    }
+  }
+}
