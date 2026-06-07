@@ -1,2 +1,4 @@
 # Build artifacts
-*.fpk
+# *.fpk 不移除，需要 commit .fpk 供 FnDepot 商店索引
+# 不再追蹤任務文件
+OPencode-TASK.md
